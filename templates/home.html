@@ -1,0 +1,23 @@
+{% extends 'head.html' %}
+
+
+{% block content %}
+    <div class="container">
+        <h1>SHOUT AT THE WALL.com</h1>
+        <p class="subtitle">
+            Got something to shout about?
+        </p>
+        <div class="button-container">
+            <a href="{% url 'wall' %}">
+                View the wall
+            </a>
+            <a href="{% url 'message' %}">
+                Shout at the wall
+            </a>
+        </div>
+
+    </div>
+    {% include 'footer.html' %}
+    
+{% endblock content %}
+
